@@ -16,6 +16,7 @@ onFormSubmit = (event) => {
   render() {
     return (
       <div className="ui segment">
+        {/* Could have used an arrow function for onFormSubmit here too. If you did wrap it in an arrow function you'd have to add parenthesis to the onFormSubmit */}
         <form onSubmit={this.onFormSubmit} className="ui form">
           <div className="field">
           <label>Image Search</label>
