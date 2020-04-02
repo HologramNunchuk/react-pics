@@ -7,12 +7,12 @@ class ImageCard extends React.Component {
   constructor(props) {
     super(props);
     this.state = {spans: 0};
-    //assign the ref to an instance var so you can use it later on in the class
+    //assign the ref to an instance var, which is imageRef here, so you can use it later on in the class
     this.imageRef = React.createRef();
   }
 
   componentDidMount() {
-    console.log(this.imageRef.current.addEventListener('load', this.setSpans));
+     this.imageRef.current.addEventListener('load', this.setSpans);
   }
 
   setSpans = () => {
